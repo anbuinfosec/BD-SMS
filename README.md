@@ -42,13 +42,13 @@ This Python script automates sending multiple SMS requests to target phone numbe
 Run with command-line arguments:
 
 ```bash
-python script.py --number 017XXXXXXXX --thread 20 --delay 1
+python main.py --number 017XXXXXXXX --thread 20 --delay 1
 ```
 
 Or run interactively without arguments:
 
 ```bash
-python script.py
+python main.py
 ```
 
 You will be prompted to enter:
@@ -57,6 +57,13 @@ You will be prompted to enter:
 * Number of successful SMS requests to send (max 50)
 * Delay between requests in seconds
 
+---
+
+## Update
+
+```bash
+python main.py -update
+```
 ---
 
 ## Important Notes
