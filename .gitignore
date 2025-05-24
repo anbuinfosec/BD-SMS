@@ -8,6 +8,8 @@ __pycache__/
 
 # ignore main codes
 base.py
+api.json
+alu.py
 # Distribution / packaging
 .Python
 build/
