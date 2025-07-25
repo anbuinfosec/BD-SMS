@@ -1,79 +1,93 @@
-# SMS Bomber Tool
+# 📱 BD-SMS
 
-This Python script automates sending multiple SMS requests to target phone numbers using publicly available APIs. It is designed for testing or stress-testing purposes only.
+A Python-based SMS bombing tool for **Bangladeshi mobile numbers** — intended strictly for testing and educational purposes.
 
 ---
 
 ## ⚠️ Disclaimer
 
-- **This tool is intended for educational and authorized testing purposes ONLY.**
-- Unauthorized or malicious use to harass or spam individuals is **illegal** and unethical.
-- The author is NOT responsible for any misuse or damages caused by this script.
-- Use responsibly and ensure you have explicit permission before targeting any phone number.
-- **Use this tool at your own risk.**
+- ❌ **Do not** use for spamming, harassment, or illegal activities.
+- ⚖️ The developer is **not responsible** for any misuse.
+- ✅ Always ensure **explicit permission** before targeting any phone number.
+- 🧠 Misuse may result in IP bans or legal consequences — use responsibly.
 
 ---
 
-## Features
+## ✅ Features
 
-- Automatically fetches a list of APIs to send SMS requests.
-- Validates Bangladeshi phone numbers starting with: `013`, `014`, `015`, `016`, `017`, `018`, `019`.
-- Sends requests sequentially with customizable delay and count.
-- Randomizes payload fields and User-Agent headers for each request.
-- Provides colored terminal output for request status and errors.
-- Supports command-line arguments or interactive input prompts.
-- Limits maximum successful requests (threads) to 50.
+- 📞 Supports Bangladeshi numbers: `013`, `014`, `015`, `016`, `017`, `018`, `019`.
+- 🔁 Sends SMS requests using public APIs (auto-updatable).
+- 🔢 Custom thread count (up to 50 successful requests).
+- 🕒 Configurable delay between requests.
+- 🎭 Random User-Agent and payloads.
+- 🧑‍💻 Interactive and command-line usage.
+- 🌐 Auto-update API list with `--update`.
 
 ---
 
-## Requirements
-
-- Python 3.7+
-- Install dependencies with:
+## 📲 Install on Termux
 
 ```bash
-  pip install -r requirements.txt
-```
+pkg update -y
+pkg upgrade -y
+pkg install python git -y
+git clone https://github.com/anbuinfosec/bd-sms.git
+cd bd-sms
+pip install -r requirements.txt
+````
 
 ---
 
-## Usage
+## 🚀 Run the Tool
 
-Run with command-line arguments:
-
-```bash
-python main.py --number 017XXXXXXXX --thread 20 --delay 1
-```
-
-Or run interactively without arguments:
+**Interactive Mode:**
 
 ```bash
 python main.py
 ```
 
-You will be prompted to enter:
-
-* Phone number (Bangladesh format)
-* Number of successful SMS requests to send (max 50)
-* Delay between requests in seconds
-
----
-
-## Update
+**Command-Line Mode:**
 
 ```bash
-python main.py -update
+python main.py --number 017XXXXXXXX --thread 20 --delay 1
 ```
+
+**Update APIs:**
+
+```bash
+python main.py --update
+```
+
 ---
 
-## Important Notes
+## 📦 Python Requirements
 
-* Excessive or unauthorized use may lead to your IP or number being blocked by services.
-* The tool depends on third-party APIs, which may change or become unavailable.
-* Always test responsibly and ethically.
+* Python 3.7+
+* Install dependencies manually:
+
+```bash
+pip install requests fake-useragent
+```
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-Mohammad Alamin — Backend Programmer
+* **Name:** Mohammad Alamin
+* 🐙 GitHub: [@anbuinfosec](https://github.com/anbuinfosec)
+* 💬 Telegram: [@anbuinfosec\_official](https://t.me/anbuinfosec_official)
+* 📘 Facebook: [Mohammad Alamin](https://www.facebook.com/anbuinfosec)
+
+---
+
+## ⭐ Support
+
+If you find this tool useful:
+
+* 🌟 Star the repo
+* 🍴 Fork it
+* 🔁 Share with ethical hackers
+
+---
+
+**© 2025 anbuinfosec — All rights reserved.**
